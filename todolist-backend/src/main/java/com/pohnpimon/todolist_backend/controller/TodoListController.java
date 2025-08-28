@@ -16,18 +16,18 @@ import jakarta.validation.Valid;
 public class TodoListController {
 
     @PostMapping("/create")
-    public String createTodolist(@RequestBody @Valid String req) {
+    public String createTodoList(@RequestBody @Valid String req) {
         return "create";
     }
 
     @PostMapping("/get")
-    public List<String> getTodolist(@RequestBody List<String> listId) {
+    public List<String> getTodoList(@RequestBody List<String> listId) {
         // แบ่งหน้า
         return new ArrayList<String>();
     }
 
     @PatchMapping("/update")
-    public String updateTodolist(@RequestBody String entity) {
+    public String updateTodoList(@RequestBody String entity) {
         return "update";
     }
 }
